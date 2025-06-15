@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}Тест на знание английского{% endblock %}
+{% block content %}
+<h1>Предлагаем вам пройти тест из 15 вопросов, который позволит  определить, насколько хорошо вы усвоили пройденный материал.</h1>
+<p>Переведите следующие слова</p>
+<form method="POST">
+    <div class="mb-3">
+        <label for="Everyone can __ to improving the environment" class="form-label">Everyone can __ to improving the environment</label>
+        <input type="text" class="form-control" id="Everyone can __ to improving the environment" name="contribute" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(distract, contribute, confuse)</p>
+    </div>
+    <div class="mb-3">
+        <label for="There is no __ from this prison" class="form-label">There is no __ from this prison</label>
+        <input type="text" class="form-control" id="There is no __ from this prison" name="escape" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(escape, ran, elaborate)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Serfdom was __ in 1861" class="form-label">Serfdom was __ in 1861</label>
+        <input type="text" class="form-control" id="Serfdom was __ in 1861" name="abolished" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(confused, boast, abolished)</p>
+    </div>
+    <div class="mb-3">
+        <label for="To make juice you need to __ it out of the fruit" class="form-label">To make juice you need to __ it out of the fruit</label>
+        <input type="text" class="form-control" id="To make juice you need to __ it out of the fruit" name="squeeze" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(distract, squeeze, escape)</p>
+    </div>
+    <div class="mb-3">
+        <label for="When you buy from this store, food __ is free" class="form-label">When you buy from this store, food __ is free</label>
+        <input type="text" class="form-control" id="When you buy from this store, food __ is free" name="delivery" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(addiction, delivery, commission)</p>
+    </div>
+    <div class="mb-3">
+        <label for="At the bank you can __ currency, for example dollars for rubles." class="form-label">At the bank you can __ currency, for example dollars for rubles.</label>
+        <input type="text" class="form-control" id="At the bank you can __ currency, for example dollars for rubles." name="exchange" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(exchange, boast, confuse)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Some of the most interesting phenomena can be __ in scientific laboratories." class="form-label">Some of the most interesting phenomena can be __ in scientific laboratories.</label>
+        <input type="text" class="form-control" id="Some of the most interesting phenomena can be __ in scientific laboratories." name="observed" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(distracted, tortured, observed)</p>
+    </div>
+    <div class="mb-3">
+        <label for="If you get this knowledge you will be able to __ a lot of money." class="form-label">If you get this knowledge you will be able to __ a lot of money.</label>
+        <input type="text" class="form-control" id="If you get this knowledge you will be able to __ a lot of money." name="earn" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(earn, approve, commit)</p>
+    </div>
+       <div class="mb-3">
+        <label for="Mobile router provides good internet __" class="form-label">Mobile router provides good internet __.</label>
+        <input type="text" class="form-control" id="Mobile router provides good internet __" name="connection" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(sway,connection, confidence)</p>
+    </div>
+       <div class="mb-3">
+        <label for="Usually the city is divided into __" class="form-label">Usually the city is divided into __.</label>
+        <input type="text" class="form-control" id="Usually the city is divided into __" name="districts" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(countries,addiction, districts)</p>
+    </div>
+       <div class="mb-3">
+        <label for="fortune" class="form-label">fortune</label>
+        <input type="text" class="form-control" id="fortune" name="удача" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(соединение ,доставка, удача)</p>
+    </div>
+       <div class="mb-3">
+        <label for="confidence" class="form-label">confidence</label>
+        <input type="text" class="form-control" id="confidence" name="уверенность" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(уверенность ,неравенство, колебание)</p>
+    </div>
+       <div class="mb-3">
+        <label for="compliant" class="form-label">compliant</label>
+        <input type="text" class="form-control" id="compliant" name="соответствующий" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(неповторимый ,соответствующий, удобный)</p>
+    </div>
+      <div class="mb-3">
+        <label for="influence" class="form-label">influence</label>
+        <input type="text" class="form-control" id="influence" name="влияние" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(влияние, удача, район)</p>
+    </div>
+      <div class="mb-3">
+        <label for="devotion" class="form-label">devotion</label>
+        <input type="text" class="form-control" id="devotion" name="преданность" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(доверие ,соединение, преданность)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить ответ</button>
+</form>
+{% endblock %}

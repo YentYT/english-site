@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Спорт{% endblock %}
+
+{% block content %}
+<h1>Привет, {{ username }} из {{ city }} !</h1>
+
+<p>Вы вошли. Посмотрите свежие новости из с</p>
+<a href="/register" class="btn btn-danger">Выйти немедленно</a>
+<a href="/news" class="btn btn-danger">Перейти к новостям</a>
+<a href="/" class="btn btn-danger">Перейти на главную страницу</a>
+{% endblock %}

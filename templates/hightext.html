@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<h1>Предлагаем вам поработать над лексикой - прочитать и перевести текст !</h1>
+   <p>Game theory can be explained broadly as a study of behaviour of rational beings in cooperative and non-cooperative decision making. It’s a relatively new field of science that emerged in the second half of the 20th century. Globalization of economics, advent of nuclear weaponry and emergence1 of computers were all major milestones in the history of humanity, and each subsequently2 dictated the need to formalize at least the most common trade and war strategies.</p>
+<button id="show-translation" class="btn btn-primary">Показать перевод</button>
+<p id="translation" style="display: none;">Теорию игр можно в широком смысле объяснить как учение о поведении рациональный существ в кооперативном и некооперативном принятии решений. Это достаточно новая отрасль науки, появившаяся во второй половине XX века. Глобализация экономики, возникновение ядерного оружия и компьютеров стали значительными вехами в истории человечества, и каждая из них впоследствии диктовала необходимость формализовать по крайней мере самые распространённые торговые и военные стратегии.</p>
+<script>
+    document.getElementById("show-translation").onclick = function() {
+        var translation = document.getElementById("translation");
+        if (translation.style.display === "none") {
+            translation.style.display = "block";
+        } else {
+            translation.style.display = "none";
+        }
+    };
+</script>
+    <a href="/highprogram" class="btn btn-danger">Вернуться к программе</a>
+
+
+{% endblock %}

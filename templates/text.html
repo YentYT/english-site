@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<h1>Предлагаем вам поработать над лексикой - прочитать и перевести текст !</h1>
+   <p>London is the capital of Great Britain. It is one of the largest cities in the world and the largest city in Europe. Its pop­ulation is about 8 million. London is situated on the river Thames. The city is very old. It has more than 20 centuries old history. Tra­ditionally it is divided into several parts, the City, West­minster, the West End and the East, End. They are very different from each other. The City is the oldest part of London, its financial and business centre. Numerous banks, offices and firms are concentrated here. Few people live in the City but over a million come to work here. There are two places of inter­est in the City: St. Paul's Cathedraland the Tower of London. St. Paul's Cathedral was built in the 17th cen­tury by the architect Christopher Wren. The Tower of London was built in the 15th century. It was used as a fortress, a palace and a prison.Now it's a museum. Westminster is the aristocratic official part of Lon­don. There are Buckingham Palace where the Queen lives and the Houses of Parliament along the north bank of the Thames. The clock towerof the Houses of Parliament is famous for its big hour bell known as «Big Ben».</p>
+<button id="show-translation" class="btn btn-primary">Показать перевод</button>
+<p id="translation" style="display: none;">Лондон — столица Великобритании. Это один из крупнейших городов мира и самый большой город в Европе. Население составляет около 8 миллионов человек. Лондон расположен на реке Темзе. Город очень старый. У него более 20 веков истории. Традиционно он делится на несколько частей: Сити, Вестминстер, Вест-Энд и Ист-Энд. Они сильно отличаются друг от друга. Город - самая старая часть Лондона, его финансовый и деловой центр. Здесь сосредоточены многочисленные банки, офисы и фирмы. В городе живет мало людей, но более миллиона приезжают сюда на работу. В городе есть две достопримечательности: Собор Святого Павла и Лондонский Тауэр. Собор Святого Павла был построен в 17 веке архитектором Кристофером Реном. Лондонский Тауэр был построен в 15 веке. Он использовался как крепость, дворец и тюрьма. Теперь это музей. Вестминстер - официальная аристократическая часть Лондона. Есть Букингемский дворец, где живет королева, и здание парламента на северном берегу Темзы. Часовая башня Дома Парламента известна своим большим часовым звонком, известным как «Биг Бен».</p>
+<script>
+    document.getElementById("show-translation").onclick = function() {
+        var translation = document.getElementById("translation");
+        if (translation.style.display === "none") {
+            translation.style.display = "block";
+        } else {
+            translation.style.display = "none";
+        }
+    };
+</script>
+<h1>Если вы перевели все правильно, то поздравляем - вы отлично усвоили материал! Теперь для окончательного закрепления знаний вы можете пройти тест из 10 вопросов. </h1>
+<a href="/easytest" class="btn btn-danger">Пройти тест</a>
+    <a href="/program" class="btn btn-danger">Вернуться к программе</a>
+
+
+{% endblock %}

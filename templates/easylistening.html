@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Тест на знание английского{% endblock %}
+{% block content %}
+<h1>Предлагаем вам пройти тест по аудированию, который покажет насколько хорошо вы воспринимаете английскую речь на слух.</h1>
+<p>Прослушайте текст, а затем вставьте подходящие слова в пропуски</p>
+<audio src="{{ url_for('static', filename='listening.wav') }}" controls preload="auto">
+  Ваш браузер не поддерживает аудио.
+</audio>
+<form method="POST">
+    <div class="mb-3">
+        <label for="The author lives in a house near the __." class="form-label">The author lives in a house near the __.</label>
+        <input type="text" class="form-control" id="The author lives in a house near the __." name="mountains" required>
+        <p>Введите вместо пропуска одну из трех форм глагола(country, forest, mountains)</p>
+    </div>
+    <div class="mb-3">
+        <label for="The author's mother works as a __." class="form-label">The author's mother works as a __.</label>
+        <input type="text" class="form-control" id="The author's mother works as a __." name="nurse" required>
+        <p>Введите вместо пропуска одну из трех форм глагола(babysitter, nurse, shop assistant)</p>
+    </div>
+    <div class="mb-3">
+        <label for="The author's mother came from __." class="form-label">The author's mother came from __.</label>
+        <input type="text" class="form-control" id="The author's mother came from __." name="Italy" required>
+        <p>Введите вместо пропуска одну из трех форм глагола(Italy, Germany, Great Britain)</p>
+    </div>
+    <div class="mb-3">
+        <label for="On weekends, the author plays __ games with his family." class="form-label">On weekends, the author plays __ games with his family.</label>
+        <input type="text" class="form-control" id="On weekends, the author plays __ games with his family." name="board" required>
+        <p>Введите вместо пропуска одну из трех форм глагола(outdoor, board, gambling)</p>
+    </div>
+    <div class="mb-3">
+        <label for="The author's father teaches __." class="form-label">The author's father teaches __.</label>
+        <input type="text" class="form-control" id="The author's father teaches __." name="mathematics" required>
+        <p>Введите вместо пропуска одну из трех форм глагола(mathematics, chemistry, physics)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить ответ</button>
+</form>
+{% endblock %}

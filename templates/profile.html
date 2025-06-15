@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Профиль{% endblock %}
+{% block content %}
+<h1>Добрый день, {{ username }} !</h1>
+<p>Ваш уровень владения английским - {{level}}</p>
+<p><img src="{{ url_for('static', filename='user.png') }}" alt="Изображение города Читы" width="300" height="300" class="img-fluid"></p>
+<div style="text-align: center; margin-top: 20px;"><a href="/register" class="btn btn-danger">Выйти</a>
+    <a href="/" class="btn btn-danger">Перейти на главную страницу</a>
+    <p>Вы можете выбрать программу в соответствии с Вашим уровнем подготовки, а также воспользоваться переводчиком</p>
+<a href="/program" class="btn btn-danger">Новичок</a>
+    <a href="/avprogram" class="btn btn-danger">Средний</a>
+    <a href="/highprogram" class="btn btn-danger">Продвинутый</a>
+    <a href="/translate" class="btn btn-danger">Переводчик</a>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Тест на знание английского{% endblock %}
+
+{% block content %}
+<h1>Предлагаем вам пройти короткий тест который позволит определить ваш уровень владения английским</h1>
+<p>Переведите следующие слова</p>
+<form method="POST">
+    <div class="mb-3">
+        <label for="tail" class="form-label">tail</label>
+        <input type="text" class="form-control" id="tail" name="tail" required>
+        <p>Введите сюда один из вариантов на русском(хвост, сказка, зуб)</p>
+    </div>
+    <div class="mb-3">
+        <label for="cow" class="form-label">cow</label>
+        <input type="text" class="form-control" id="cow" name="cow" required>
+        <p>Введите сюда один из вариантов на русском(газ, корова, уголь)</p>
+    </div>
+    <div class="mb-3">
+        <label for="window" class="form-label">window</label>
+        <input type="text" class="form-control" id="window" name="window" required>
+        <p>Введите сюда один из вариантов на русском(ветер, запад, окно)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Результат{% endblock %}
+{% block content %}
+<h1>Ознакомьтесь с результатами теста</h1>
+<p>{{level}} </p>
+<p><img src="{{ url_for('static', filename='grammar.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="900" height="900"><p>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/grammar" class="btn btn-danger">Вернуться к программе грамматики</a>
+</div>
+{% endblock %}

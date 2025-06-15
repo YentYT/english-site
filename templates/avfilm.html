@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Результат{% endblock %}
+
+{% block content %}
+<h1>Предлагаем вам к просмотру следующие фильмы на английском!</h1>
+
+
+<p>Отпуск по обмену - "the Holiday"</p>
+<p><img src="{{ url_for('static', filename='holiday.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<p>Социальная сеть - "Social network"</p>
+<p><img src="{{ url_for('static', filename='network.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<p>Интерстеллар - "Interstellar"</p>
+<p><img src="{{ url_for('static', filename='interstellar.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/avprogram" class="btn btn-danger">Вернуться к программе</a>
+</div>
+{% endblock %}

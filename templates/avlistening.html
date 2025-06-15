@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Тест на знание английского{% endblock %}
+{% block content %}
+<h1>Предлагаем вам пройти тест по аудированию, который покажет насколько хорошо вы воспринимаете английскую речь на слух.</h1>
+<p>Прослушайте текст, а затем вставьте подходящие слова в пропуски</p>
+<audio src="{{ url_for('static', filename='engineer.mp3') }}" controls preload="auto">
+  Ваш браузер не поддерживает аудио.
+</audio>
+<form method="POST">
+    <div class="mb-3">
+        <label for="The profession of engineering requires strong __ and problem-solving skills." class="form-label">The profession of engineering requires strong __ and problem-solving skills.</label>
+        <input type="text" class="form-control" id="The profession of engineering requires strong __ and problem-solving skills." name="analytical" required>
+        <p>Введите вместо пропуска подходящее слово(analytical, communication, physical)</p>
+    </div>
+    <div class="mb-3">
+        <label for="In their work, engineers are responsible for __ and testing new technologies and products." class="form-label">In their work, engineers are responsible for __ and testing new technologies and products.</label>
+        <input type="text" class="form-control" id="In their work, engineers are responsible for __ and testing new technologies and products." name="developing" required>
+        <p>Введите вместо пропуска подходящее слово(developing, execution, working)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Engineers work in a variety of fields, including mechanical, electrical, civil, and __ engineering." class="form-label">Engineers work in a variety of fields, including mechanical, electrical, civil, and __ engineering.</label>
+        <input type="text" class="form-control" id="Engineers work in a variety of fields, including mechanical, electrical, civil, and __ engineering." name="chemical" required>
+        <p>Введите вместо пропуска подходящее слово(material, physical, chemical)</p>
+    </div>
+    <div class="mb-3">
+        <label for="To become an engineer, an individual typically needs to complete a __ degree in engineering." class="form-label">To become an engineer, an individual typically needs to complete a __ degree in engineering.</label>
+        <input type="text" class="form-control" id="To become an engineer, an individual typically needs to complete a __ degree in engineering." name="bachelor’s" required>
+        <p>Введите вместо пропуска подходящее слово(master's degree, bachelor’s, docent)</p>
+    </div>
+    <div class="mb-3">
+        <label for="They also play a vital role in the development and __ of new technologies and innovations." class="form-label">They also play a vital role in the development and __ of new technologies and innovations.</label>
+        <input type="text" class="form-control" id="They also play a vital role in the development and __ of new technologies and innovations." name="implementation" required>
+        <p>Введите вместо пропуска подходящее слово(utilization,  innovations, implementation)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить ответ</button>
+</form>
+{% endblock %}

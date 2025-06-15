@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %}Тест на знание английского{% endblock %}
+{% block content %}
+<h1>Предлагаем вам пройти тест из 10 вопросов, чтобы проверить, насколько хорошо вы усвоили материал программы.</h1>
+<p>Поставьте глагол в правильную форму</p>
+<form method="POST">
+    <div class="mb-3">
+        <label for="Я хожу в поликлинику каждую неделю. - I __ to the clinic every week." class="form-label">Я хожу в поликлинику каждую неделю.- I __ to the clinic every week.</label>
+        <input type="text" class="form-control" id="Я хожу в поликлинику каждую неделю. - I __ to the clinic every week." name="go" required>
+        <p>Введите вместо пропуска одну из трех форм глагола(go, going, went)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Я уже выполнил это поручение. - I have already __ this task." class="form-label">Я уже выполнил это поручение. - I have already __ this task.</label>
+        <input type="text" class="form-control" id="Я уже выполнил это поручение. - I have already __ this task." name="completed" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(was completing, complete, completed)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Я шел по улице когда начались взрывы. - I __ down the street when the explosions started." class="form-label">Я шел по улице когда начались взрывы. - I __ down the street when the explosions started.</label>
+        <input type="text" class="form-control" id="Я шел по улице когда начались взрывы. - I __ down the street when the explosions started." name="was walking" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(walked, was walking, am walking)</p>
+    </div>
+    <div class="mb-3">
+        <label for="В понедельник в 12 часов дня я буду защищать диссертацию. - I __ my dissertation on Monday at 12 noon." class="form-label">В понедельник в 12 часов дня я буду защищать диссертацию. - I __ my dissertation on Monday at 12 noon.</label>
+        <input type="text" class="form-control" id="В понедельник в 12 часов дня я буду защищать диссертацию. - I __ my dissertation on Monday at 12 noon." name="will be defending" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(was defending, will be defending, will defende)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Я успел уйти на большое расстояние к тому моменту как заметил пропажу. - I __ already __ a long way by the time I noticed the loss." class="form-label">Я успел уйти на большое расстояние к тому моменту как заметил пропажу. - I __ already __ a long way by the time I noticed the loss.</label>
+        <input type="text" class="form-control" id="Я успел уйти на большое расстояние к тому моменту как заметил пропажу. - I __ already __ a long way by the time I noticed the loss." name="had gone" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(have gone, gone, had gone)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Я жду своей очереди уже третий час. - I __ for my turn for three hours already." class="form-label">Я жду своей очереди уже третий час. - I __ for my turn for three hours already.</label>
+        <input type="text" class="form-control" id="Я жду своей очереди уже третий час. - I __ for my turn for three hours already." name="have been waiting" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(have been waiting, am waiting, had waited)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Я ходил в парк вчера. - I __ to the park yesterday." class="form-label">Я ходил в парк вчера. - I __ to the park yesterday.</label>
+        <input type="text" class="form-control" id="Я ходил в парк вчера. - I __ to the park yesterday." name="went" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(have gone, went, was going)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Я уверен что я сделаю это задание. - I am sure that I __ this task." class="form-label">Я уверен что я сделаю это задание. - I am sure that I __ this task.</label>
+        <input type="text" class="form-control" id="Я уверен что я сделаю это задание. - I am sure that I __ this task." name="will do" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(will do, will have doing, will have been doing)</p>
+    </div>
+       <div class="mb-3">
+        <label for="В 2040 году будет 20 лет, как я работаю инженером. - By 2040, I __ as an engineer for 20  years." class="form-label">В 2040 году будет 20 лет, как я работаю инженером. - By 2040, I __ as an engineer for 20  years.</label>
+        <input type="text" class="form-control" id="В 2040 году будет 20 лет, как я работаю инженером. - By 2040, I __ as an engineer for 20  years." name="will have been working" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(will be working, will work, will have been working)</p>
+           </div>
+       <div class="mb-3">
+        <label for="Я закончу задание по программированию к 3 часам дня. - I __ the programming assignment by 3 pm." class="form-label">Я закончу задание по программированию к 3 часам дня. - I __ the programming assignment by 3 pm.</label>
+        <input type="text" class="form-control" id="Я закончу задание по программированию к 3 часам дня. - I __ the programming assignment by 3 pm." name="will have done" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(will have been doing, will be doing, will have done)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить ответ</button>
+</form>
+{% endblock %}

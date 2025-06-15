@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Фильм{% endblock %}
+{% block content %}
+<h1>Предлагаем вам к просмотру следующие фильмы на английском!</h1>
+
+<p>Один дома - "Home alone"</p>
+<p><img src="{{ url_for('static', filename='alive.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<p>Форрест Гамп - "Forrest Gump"</p>
+<p><img src="{{ url_for('static', filename='gump.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<p>Изгой - "Cast away"</p>
+<p><img src="{{ url_for('static', filename='away.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/program" class="btn btn-danger">Вернуться к программе</a>
+</div>
+{% endblock %}

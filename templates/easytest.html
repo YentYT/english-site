@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}Тест на знание английского{% endblock %}
+{% block content %}
+<h1>Предлагаем вам пройти тест из 15 вопросов, чтобы проверить, насколько хорошо вы усвоили материал программы.</h1>
+<p>Переведите следующие слова</p>
+<form method="POST">
+    <div class="mb-3">
+        <label for="I love to __ songs" class="form-label">I love to __ songs</label>
+        <input type="text" class="form-control" id="I love to __ songs" name="sing" required>
+        <p>Введите вместо пропуска один из вариантов на английском(sing, run, get)</p>
+    </div>
+    <div class="mb-3">
+        <label for="I __ a  very strange sound" class="form-label">I __ a  very strange sound</label>
+        <input type="text" class="form-control" id="I __ a  very strange sound" name="heard" required>
+        <p>Введите вместо пропуска один из вариантов на английском(heard, ran, cooked)</p>
+    </div>
+    <div class="mb-3">
+        <label for="I __ English well" class="form-label">I __ English well</label>
+        <input type="text" class="form-control" id="I __ English well" name="speak" required>
+        <p>Введите вместо пропуска один из вариантов на английском(get, stand, speak)</p>
+    </div>
+    <div class="mb-3">
+        <label for="I __ good food" class="form-label">I __ good food</label>
+        <input type="text" class="form-control" id="I __ good food" name="cooked" required>
+        <p>Введите вместо пропуска один из вариантов на английском(stand, cooked, run)</p>
+    </div>
+    <div class="mb-3">
+        <label for="I __ a movie on TV" class="form-label">I __ a movie on TV</label>
+        <input type="text" class="form-control" id="I __ a movie on TV" name="watched" required>
+        <p>Введите вместо пропуска один из вариантов на английском(watched, worked, stand)</p>
+    </div>
+    <div class="mb-3">
+        <label for="I am 12 years old and my brother is 6. He is __ than me." class="form-label">I am 12 years old and my brother is 6. He is __ than me..</label>
+        <input type="text" class="form-control" id="I am 12 years old and my brother is 6. He is __ than me." name="younger" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(older, younger, new)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Usually people sleep at __." class="form-label">Usually people sleep at __.</label>
+        <input type="text" class="form-control" id="Usually people sleep at __." name="night" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(day, boy, night)</p>
+    </div>
+    <div class="mb-3">
+        <label for="I __ him to buy some milk." class="form-label">I __ him to buy some milk.</label>
+        <input type="text" class="form-control" id="I __ him to buy some milk." name="said" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(said, read, run)</p>
+    </div>
+       <div class="mb-3">
+        <label for="The color of the sky is __" class="form-label">The color of the sky is __.</label>
+        <input type="text" class="form-control" id="The color of the sky is __" name="blue" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(red, blue, black)</p>
+    </div>
+      <div class="mb-3">
+        <label for="I like __ to music" class="form-label">TI like __ to music.</label>
+        <input type="text" class="form-control" id="I like __ to music" name="listening" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(calling, listening, reading)</p>
+    </div>
+      <div class="mb-3">
+        <label for="guilty" class="form-label">guilty</label>
+        <input type="text" class="form-control" id="guilty" name="виновный" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(сердитый ,виновный, короткий)</p>
+    </div>
+      <div class="mb-3">
+        <label for="remote" class="form-label">remote</label>
+        <input type="text" class="form-control" id="remote" name="удаленный" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(удаленный ,странный, свободный)</p>
+    </div>
+      <div class="mb-3">
+        <label for="recent" class="form-label">recent</label>
+        <input type="text" class="form-control" id="recent" name="недавний" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(недавний ,легкий, странныйй)</p>
+    </div>
+      <div class="mb-3">
+        <label for="relevant" class="form-label">relevant</label>
+        <input type="text" class="form-control" id="relevant" name="актуальный" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(безопасный ,чужой, актуальный)</p>
+    </div>
+      <div class="mb-3">
+        <label for="curious" class="form-label">curious</label>
+        <input type="text" class="form-control" id="curious" name="любопытный" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(спящий ,любопытный, тихий)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить ответ</button>
+</form>
+{% endblock %}

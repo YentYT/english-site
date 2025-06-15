@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Результат{% endblock %}
+{% block content %}
+<h1>Ознакомьтесь с результатами теста</h1>
+<p>{{level}} </p>
+<img src="{{ url_for('static', filename='high.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="900" height="900">
+<div style="text-align: center; margin-top: 20px;">
+    <p>Выберите программу в соответствии с уровнем или перейдите к следующему разделу </p>
+    <a href="/grammar" class="btn btn-danger">Раздел грамматики</a>
+    <a href="/program" class="btn btn-danger">Новичок</a>
+    <a href="/avprogram" class="btn btn-danger">Средний</a>
+    <a href="/highprogram" class="btn btn-danger">Продвинутый</a>
+</div>
+{% endblock %}

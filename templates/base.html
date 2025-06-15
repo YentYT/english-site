@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Сайт, мой сайт, мой прекрасный сайт{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Главная</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/news">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register">Регистрация</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/profile">Профиль</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/program">Программа</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/avprogram">Программа для среднего уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/highprogram">Программа для высокого уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/test">Тест</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/result">Результат</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/text">Текст для перевода</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/hightext">Текст для перевода высокий уровень</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/middletext">Текст для перевода средний уровень</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/film">Фильм</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/avfilm">Фильм для среднего уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/highfilm">Фильм для высокого уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/translate">Переводчик</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/easytest">Тест для начального уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/easyresult">Результат теста для начального уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/avtest">Тест для среднего уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/avresult">Результат теста для среднего уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/hightest">Тест для продвинутого уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/highresult">Результат теста для продвинутого уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/grammar">Грамматика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/grammartest">Тест по грамматике</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/grammarresult">Результат теста по грамматике</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/easylistening">Тест по аудированию для начального уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/listeningresult">Результат теста по аудированию для начального уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/avlistening">Тест по аудированию для среднего уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/avlisteningresult">Результат теста по аудированию для среднего уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/highlistening">Тест по аудированию для продвинутого уровня</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/avlisteningresult">Результат теста по аудированию для продвинутого уровня</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Новости Читы{% endblock %}
+
+{% block content %}
+<h1>Последние новости</h1>
+
+{% if news %}
+    <ul>
+        {% for article in news %}
+        <li>
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.content }}</p>
+            <p>{{article.time}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Новостей пока нет. Попробуйте зайти позже (нет).</p>
+{% endif %}
+{% endblock %}

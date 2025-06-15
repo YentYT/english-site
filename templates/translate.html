@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Переводчик{% endblock %}
+{% block content %}
+
+    <h1>Переводчик</h1>
+<p>Здесь вы можете узнать перевод любого незнакомого слова!</p>
+<p><img src="{{ url_for('static', filename='translate.jpg') }}" alt="Изображение города Читы" width="800" height="800" class="img-fluid"></p>
+    <form method="POST">
+        <div class="mb-3">
+            <textarea name="text" rows="4" cols="50" placeholder="Введите текст для перевода" class="form-control"></textarea>
+        </div>
+        <div class="mb-3">
+            <select name="language" class="form-select">
+                <option value="en">Английский</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Перевести</button>
+    </form>
+
+    {% if result %}
+        <h2>Результат перевода:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+{% endblock %}

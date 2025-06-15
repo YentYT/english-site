@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}Тест на знание английского{% endblock %}
+{% block content %}
+<h1>Предлагаем вам пройти тест из 15 вопросов, чтобы проверить, насколько хорошо вы усвоили материал программы.</h1>
+<p>Переведите следующие слова</p>
+<form method="POST">
+    <div class="mb-3">
+        <label for="I don't have my own room, so I decided to __ one." class="form-label">I don't have my own room, so I decided to __ one</label>
+        <input type="text" class="form-control" id="I don't have my own room, so I decided to __ one." name="lease" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(infiltrate, lease, coax)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Electromagnetic waves, like all other waves, __" class="form-label">Electromagnetic waves, like all other waves, __</label>
+        <input type="text" class="form-control" id="Electromagnetic waves, like all other waves, __" name="waver" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(contrive, waver, reminisce)</p>
+    </div>
+    <div class="mb-3">
+        <label for="In order not to miss the opportunity to improve the project, you need to __ its development" class="form-label">In order not to miss the opportunity to improve the project, you need to __ its development</label>
+        <input type="text" class="form-control" id="In order not to miss the opportunity to improve the project, you need to __ its development" name="follow-up" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(abate, abscond, follow-up)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Thermal power plants __ over other types of power plants in Russia, so they are the main source of energy." class="form-label">Thermal power plants __ over other types of power plants in Russia, so they are the main source of energy.</label>
+        <input type="text" class="form-control" id="Thermal power plants __ over other types of power plants in Russia, so they are the main source of energy." name="prevail" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(prevail, reminisce, contrive)</p>
+    </div>
+    <div class="mb-3">
+        <label for="To specify the position of a point in mathematics, __ are used." class="form-label">To specify the position of a point in mathematics, __ are used.</label>
+        <input type="text" class="form-control" id="To specify the position of a point in mathematics, __ are used." name="axes" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(oversight, axes, implication)</p>
+    </div>
+    <div class="mb-3">
+        <label for="In production, most products are made using a __." class="form-label">In production, most products are made using a __.</label>
+        <input type="text" class="form-control" id="In production, most products are made using a __." name="pattern" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(unveiling, discerning, pattern)</p>
+    </div>
+    <div class="mb-3">
+        <label for="The country is very cold, so its climate is called __." class="form-label">The country is very cold, so its climate is called __.</label>
+        <input type="text" class="form-control" id="The country is very cold, so its climate is called __." name="harsh" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(quintessential, harsh, excessive)</p>
+    </div>
+    <div class="mb-3">
+        <label for="This person couldn't decide for a long time who to vote for, so he is __." class="form-label">This person couldn't decide for a long time who to vote for, so he is __.</label>
+        <input type="text" class="form-control" id="This person couldn't decide for a long time who to vote for, so he is __." name="indecisive" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(indecisive, excessive, irrefutable)</p>
+    </div>
+       <div class="mb-3">
+        <label for="Before you do a project, you need to __ its plan." class="form-label">Before you do a project, you need to __ its plan.</label>
+        <input type="text" class="form-control" id="Before you do a project, you need to __ its plan." name="outline" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(outline, anchor, coax)</p>
+           </div>
+       <div class="mb-3">
+        <label for="__ is the process of obtaining knowledge about the surrounding world, phenomena and patterns of reality." class="form-label">__ is the process of obtaining knowledge about the surrounding world, phenomena and patterns of reality.</label>
+        <input type="text" class="form-control" id="__ is the process of obtaining knowledge about the surrounding world, phenomena and patterns of reality." name="cognition" required>
+        <p>Введите вместо пропуска один наиболее подходящий по смыслу вариант  на английском(anthropologist, connection, offspring)</p>
+    </div>
+       <div class="mb-3">
+        <label for="oversight" class="form-label">oversight</label>
+        <input type="text" class="form-control" id="oversight" name="надзор" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(надзор ,выставка, вариант)</p>
+    </div>
+       <div class="mb-3">
+        <label for="instance" class="form-label">instance</label>
+        <input type="text" class="form-control" id="instance" name="экземпляр" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(экземпляр, разоблачение, контроль)</p>
+    </div>
+       <div class="mb-3">
+        <label for="unveiling" class="form-label">unveiling</label>
+        <input type="text" class="form-control" id="unveiling" name="разоблачение" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(разоблачение , утверждение, доказательство)</p>
+    </div>
+       <div class="mb-3">
+        <label for="adverse" class="form-label">adverse</label>
+        <input type="text" class="form-control" id="adverse" name="неблагоприятный" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(очевидный ,поразительный, неблагоприятный)</p>
+    </div>
+      <div class="mb-3">
+        <label for="grim" class="form-label">grim</label>
+        <input type="text" class="form-control" id="grim" name="мрачный" required>
+        <p>Переведите слово на русский язык и выберите подходящий вариант из предложенных(неопровержимый, мрачный, скудный)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить ответ</button>
+</form>
+{% endblock %}

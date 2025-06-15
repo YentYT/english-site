@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Результат{% endblock %}
+
+{% block content %}
+<h1>Предлагаем вам к просмотру следующие фильмы на английском!</h1>
+
+
+<p>Криминальное чтиво - "Pulp Fiction"</p>
+<p><img src="{{ url_for('static', filename='criminal.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<p>Король говорит - "The king's speech"</p>
+<p><img src="{{ url_for('static', filename='king.png') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<p>Поймай меня, если сможешь - "Catch me if you can"</p>
+<p><img src="{{ url_for('static', filename='catch.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="400" height="400"></p>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/highprogram" class="btn btn-danger">Вернуться к программе</a>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+<h1>Регистрация</h1>
+<h1>Пожалуйста, зарегистрируйтесь на сайте. Это поможет вам отслеживать ваши достижения</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label for="username" class="form-label">Логин</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+        <p>Введите Ваше имя, чтобы мы знали как к вам обращаться</p>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Пароль</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+        <p>Придумайте надежный пароль</p>
+    </div>
+    <div class="mb-3">
+        <label for="level" class="form-label">Уровень владения английским</label>
+        <input type="text" class="form-control" id="level" name="level" required>
+        <p>Введите уровень владения  английским языком, которым вы владеете сейчас(новичок, средний или продвинутый).</p>
+    </div>
+
+    <a href="/test" class="btn btn-danger">Не знаю свой уровень английского</a>
+    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+</form>
+{% endblock %}

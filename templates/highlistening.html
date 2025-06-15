@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Тест на знание английского{% endblock %}
+{% block content %}
+<h1>Предлагаем вам пройти тест по аудированию, который покажет насколько хорошо вы воспринимаете английскую речь на слух.</h1>
+<p>Прослушайте текст, а затем вставьте подходящие слова в пропуски</p>
+<audio src="{{ url_for('static', filename='london.mp3') }}" controls preload="auto">
+  Ваш браузер не поддерживает аудио.
+</audio>
+<form method="POST">
+    <div class="mb-3">
+        <label for="One hundred and fifty years ago, in January __, the first underground railway in the world carried its first passengers." class="form-label">One hundred and fifty years ago, in January __, the first underground railway in the world carried its first passengers.</label>
+        <input type="text" class="form-control" id="One hundred and fifty years ago, in January __, the first underground railway in the world carried its first passengers." name="1863" required>
+        <p>Введите вместо пропуска подходящее слово(1863, 1963, 1833)</p>
+    </div>
+    <div class="mb-3">
+        <label for="To celebrate the __th birthday of the London Underground, one of the old steam engines came out of itsretirement home in a museum to pull a special Underground train." class="form-label">To celebrate the __th birthday of the London Underground, one of the old steam engines came out of itsretirement home in a museum to pull a special Underground train.</label>
+        <input type="text" class="form-control" id="To celebrate the __th birthday of the London Underground, one of the old steam engines came out of itsretirement home in a museum to pull a special Underground train." name="150" required>
+        <p>Введите вместо пропуска подходящее слово(130, 160, 150)</p>
+    </div>
+    <div class="mb-3">
+        <label for="The new railway was __ and unpopular with many people." class="form-label">The new railway was __ and unpopular with many people.</label>
+        <input type="text" class="form-control" id="The new railway was __ and unpopular with many people." name="controversial" required>
+        <p>Введите вместо пропуска подходящее слово( contradictory, conflicting, controversial)</p>
+    </div>
+    <div class="mb-3">
+        <label for="Nowadays, we say “__” to mean all of the London underground system." class="form-label">Nowadays, we say “__” to mean all of the London underground system.</label>
+        <input type="text" class="form-control" id="Nowadays, we say “__” to mean all of the London underground system." name="the Tube" required>
+        <p>Введите вместо пропуска подходящее слово(the Sub, the Tube, the Stick)</p>
+    </div>
+    <div class="mb-3">
+        <label for="When you arrive at your destination, you will probably step onto an escalator to carry you up to the surface.You will see signs saying “please stand on the __“." class="form-label">When you arrive at your destination, you will probably step onto an escalator to carry you up to the surface.You will see signs saying “please stand on the __“.</label>
+        <input type="text" class="form-control" id="When you arrive at your destination, you will probably step onto an escalator to carry you up to the surface.You will see signs saying “please stand on the __“." name="right" required>
+        <p>Введите вместо пропуска подходящее слово(left, right, front)</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Отправить ответ</button>
+</form>
+{% endblock %}

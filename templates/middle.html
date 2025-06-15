@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<h1>Предлагаем вам поработать над лексикой - прочитать и перевести текст !</h1>
+   <p>Humans are generally good at noticing beautiful things. Humans are also generally good at building beautiful things. A Wonder of the World is a landmark1 or a natural phenomenon that is significant2 enough to be noticed by any person around the world. Many different lists of the Wonders of the World were made over the course of history, so let’s have a look at some!
+
+The first of such lists was made by a Greek historian Herodotus. Only three places were mentioned in it. Eventually the list was expanded up to seven Wonders. Probably everyone can name at least some of those monuments: the Great Pyramid of Giza; the Hanging Gardens of Babylon; the Lighthouse of Alexandria; the Colossus of Rhodes; the Mausoleum at Halicarnassus; the Temple of Artemis; the Statue of Zeus at Olympia. The curious thing about these Wonders is that almost all of them represent3 the Greek culture. Another thing to note is that the ancient Greeks haven’t actually used the term ‘wonder’, but instead it was a list ‘of things to see’, making such lists essentially4 just a travel guide. Almost all of these Wonders were destroyed one way or another, and today only the Great Pyramid of Giza, also known as the Pyramid of Cheops or the Pyramid of Khufu, still stands.</p>
+<button id="show-translation" class="btn btn-primary">Показать перевод</button>
+<p id="translation" style="display: none;">Люди достаточно хорошо замечают красивые вещи. Люди также достаточно хорошо красивые вещи строят. Чудом Света называется некоторая достопримечательность или явление, достаточно заметное, чтобы обратить на себя внимание любого человека во всём мире. Много различных списков с Чудесами Света было сделано в ходе истории – давайте взглянем на некоторые!
+
+Первый из таких списков был сделан греческим историком Геродотом. В нём было перечислено только три места. Со временем этот список был расширен до семи чудес. Наверное, каждый может назвать хотя бы некоторые из этих монументов: Великая пирамида Гизы; Висячие сады Вавилона; Александрийский маяк; Колосс Родосский; Мавзолей в Галикарнасе; Храм Артемиды Эфесской; статуя Зевса в Олимпии. Интересно в этом списке то, что почти все эти чудеса представляют греческую культуру. Ещё одно замечание – древние греки на самом деле не использовали слово «чудо», на самом деле это был список «достопримечательностей», и по сути он был просто путеводителем для туристов. Почти все эти чудеса были так или иначе уничтожены, и сегодня стоит лишь Великая пирамида Гизы, также известная как пирамида Хеопса или пирамида Хуфу.</p>
+<script>
+    document.getElementById("show-translation").onclick = function() {
+        var translation = document.getElementById("translation");
+        if (translation.style.display === "none") {
+            translation.style.display = "block";
+        } else {
+            translation.style.display = "none";
+        }
+    };
+</script>
+    <a href="/avprogram" class="btn btn-danger">Вернуться к программе</a>
+
+
+{% endblock %}

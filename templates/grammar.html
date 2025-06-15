@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Раздел грамматики{% endblock %}
+
+{% block content %}
+<h1>Вы переходите к разделу грамматики. Он включает в себя времена, структуры предложений, части речи, согласование предложений и другое.</h1>
+<p>Ниже представлены таблицы времен в английском с примерами предложений в каждом времени. Советуем вам изучить их.</p>
+    <p>Таблица времен в английском языке с примером</p>
+<div style="text-align: center; margin-top: 20px;">
+    <img src="{{ url_for('static', filename='times.png') }}" alt="Изображение города Читы" class="img-fluid" width="900" height="900">
+</div>
+
+<p>
+    Таблица времен в английском языке с формулами образования предложений</p>
+<div style="text-align: center; margin-top: 20px;">
+    <img src="{{ url_for('static', filename='times.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="900" height="900">
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <p>Таблица времен в английском языке с примером предложений</p>
+    <div style="text-align: center; margin-top: 20px;">
+<table>
+    <tr>
+        <td>Время</td>
+        <td>Пример с переводом</td>
+    </tr>
+    <tr>
+        <td>Present Simple</td>
+        <td>I go to school every day. — Я хожу в школу  каждый день.</td>
+    </tr>
+    <tr>
+        <td>Present Continuous</td>
+        <td>I am doing my homework right now. — Я сейчас делаю мою домашнюю работу.</td>
+    </tr>
+    <tr>
+        <td>Present Perfect</td>
+        <td>I have already done this exercise. — Я уже делал это упражнение.</td>
+    </tr>
+    <tr>
+        <td>Present Perfect Continuous</td>
+        <td>I have been reading this text for an hour! — Я читаю этот текст уже целый час!</td>
+    </tr>
+    <tr>
+        <td>Past Simple</td>
+        <td>I learned a poem yesterday. — Я выучил стихотворение вчера.</td>
+    </tr>
+        <tr>
+        <td>Past Continuous</td>
+        <td>I was doing my homework when he came. — Я делал свое домашнее задание когда он пришел.</td>
+    </tr>
+        <tr>
+        <td>Past Perfect</td>
+        <td>My dog had chewed most of my notebook before I noticed that. — Моя собака сжевала большую часть моей тетрадки до того, как я это заметил.</td>
+    </tr>
+        <tr>
+        <td>Past Perfect Continuous</td>
+        <td>I had been doing homework for three hours before I fell asleep right at my desk. —  Я три часа делал домашку до того, как уснул прямо за столом.</td>
+    </tr>
+        <tr>
+        <td>Future Simple</td>
+        <td>I will complete this project. — Я выполню этот проект.</td>
+    </tr>
+        <tr>
+        <td>Future Continuous</td>
+        <td>I will be working on Friday at 8pm. — Я буду работать в пятницу в 8 вечера.</td>
+    </tr>
+        <tr>
+        <td>Future Perfect</td>
+        <td>I will have done project by 2 p.m. tomorrow. — Я закончу проект завтра к 2 часам.</td>
+    </tr>
+        <tr>
+        <td>Future Perfect Continuous</td>
+        <td>By 2030, I will have been working for 10 years. — В 2030 году будет 10 лет, как я работаю.</td>
+    </tr>
+</table>
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Главная страница{% endblock %}
+{% block content %}
+<h1>Добро пожаловать на сайт английского языка!</h1>
+<p>Если вы зашли на этот сайт, то вы наверняка хотите изучать английский язык.
+    Здесь вы сможете улучшить свои знания в разделе грамматики, лексики и научитесь объясняться на английском.</p>
+<img src="{{ url_for('static', filename='english.png') }}" alt="Изображение города Читы" class="img-fluid" width="500" height="500">
+<img src="{{ url_for('static', filename='eng.jpg') }}" alt="Изображение города Читы" class="img-fluid" width="550" height="550">
+<a href="/register" class="btn btn-danger">Хочу начать</a>
+{% endblock %}
