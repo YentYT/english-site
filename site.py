@@ -4,7 +4,9 @@ from googletrans import Translator
 from flask import Flask, render_template, request, url_for, session, redirect
 app = Flask(__name__)
 app.secret_key = 'asdfgh'
-data = [{'title': 'city', 'content': 'There are 300000 of people live in this city', 'time':datetime.datetime.now() }, {'title': 'country', 'content': 'There are fifty million of people in this country', 'time': datetime.datetime.now()}, {'title': 'army', 'content': 'There are one million of people in army', 'time': datetime.datetime.now()}]
+data = [{'title': 'city', 'content': 'There are 300000 of people live in this city', 'time':datetime.datetime.now()},
+        {'title': 'country', 'content': 'There are fifty million of people in this country', 'time': datetime.datetime.now()},
+        {'title': 'army', 'content': 'There are one million of people in army', 'time': datetime.datetime.now()}]
 @app.route('/')
 def index():
     return render_template('index.html')
