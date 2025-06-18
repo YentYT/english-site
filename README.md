@@ -11,13 +11,15 @@
 
 ## Использованные технологии
 
-•   Python
-•   Flask
-•   HTML
-•   CSS
-•   JavaScript
-•   googletrans (Google Translate API)
-•   (Пример) База данных SQLite
+* Python
+* Flask
+* HTML
+* CSS
+* JavaScript
+* googletrans (Google Translate API)
+* (Пример) База данных SQLite
+
+
 
 ▌Установка
 
