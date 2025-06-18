@@ -22,5 +22,9 @@
 
 1.  **Склонируйте репозиторий:**
 
+bash
+    git clone https://github.com/YourUsername/English-Learning-Website.git  # ЗАМЕНИТЕ!
+    cd English-Learning-Website  # ЗАМЕНИТЕ!
+    ```
     
 
