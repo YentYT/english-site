@@ -23,8 +23,14 @@
 1.  **Склонируйте репозиторий:**
 
 bash
-    git clone https://github.com/YourUsername/English-Learning-Website.git  # ЗАМЕНИТЕ!
-    cd English-Learning-Website  # ЗАМЕНИТЕ!
+    git clone https://github.com/YentYT/english-site
+    cd english-site
     ```
+
+2.  Установите зависимости:
+
+    
+    pip install -r requirements.txt
+    
     
 
