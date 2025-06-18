@@ -26,7 +26,7 @@
 
 3. Установите зависимости:
   
-  pip install Flask (googletrans==4.0.0-rc1, math, datetime)
+  pip install -r requirements.txt
 
 3. Запустите приложение:
 
