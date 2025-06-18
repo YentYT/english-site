@@ -16,10 +16,7 @@
 •   Python
 •   Flask
 •   HTML
-•   CSS
-•   JavaScript
 •   googletrans (Google Translate API)
-•   (Пример) База данных SQLite
 
 ## Установка
 
