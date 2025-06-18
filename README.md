@@ -23,33 +23,21 @@
 
 1.  Склонируйте репозиторий:
 ```
-    
-    git clone https://github.com/YentYT/english-site
-    
+    git clone https://github.com/YentYT/english-site   
 ```
 2.  Перейдите в каталог проекта:
 ```
-    
-    cd english-site
-  ```  
-
+     cd english-site
+```  
 3.  Создайте виртуальное окружение (рекомендуется):
-```
-     
+```  
     python -m venv venv
-    
 ```
-
-
 4.  Установите зависимости:
 ```
-    
     pip install -r requirements.txt
-    
 ```
-
 5.  Запустите приложение:
 ```
-    
     python app.py
-  ```  
+```  
