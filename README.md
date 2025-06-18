@@ -22,61 +22,34 @@
 ▌Установка
 
 1.  Склонируйте репозиторий:
-
+```
     
-    git clone https://github.com/YourUsername/English-Learning-Website.git  # **ЗАМЕНИТЕ ЭТО!**
+    git clone https://github.com/YentYT/english-site
     
-
+```
 2.  Перейдите в каталог проекта:
-
+```
     
-    cd English-Learning-Website  # **ЗАМЕНИТЕ ЭТО!**
-    
+    cd english-site
+  ```  
 
 3.  Создайте виртуальное окружение (рекомендуется):
-
-    
+```
+     
     python -m venv venv
     
+```
 
-4.  Активируйте виртуальное окружение:
 
-    •   В Windows:
-
-        
-        venv\Scripts\activate
-        
-
-    •   В macOS и Linux:
-
-        
-        source venv/bin/activate
-        
-
-5.  Установите зависимости:
-
+4.  Установите зависимости:
+```
     
     pip install -r requirements.txt
     
+```
 
-6.  (Если используется Google Translate) Настройте файл config.py:
-
-    •   Создайте файл с именем config.py в корневой директории проекта.
-    •   Добавьте следующий код, заменив YOUR_GOOGLE_TRANSLATE_API_KEY на свой ключ API (если требуется для вашей настройки):
-
-        
-        # config.py
-        # Если используется Google Translate API (или любой API с ключом)
-        API_KEY = "YOUR_GOOGLE_TRANSLATE_API_KEY"
-
-        # Если ключ API не используется, можно оставить это поле пустым
-        # API_KEY = ""
-        
-
-        ВАЖНО: Никогда не храните ключи API непосредственно в коде! Используйте переменные окружения или более безопасную систему управления конфигурацией. Это только простой пример.
-
-7.  Запустите приложение:
-
+5.  Запустите приложение:
+```
     
     python app.py
-    
+  ```  
