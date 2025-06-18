@@ -20,19 +20,29 @@
 
 ## Установка
 
-1.  Склонируйте репозиторий:
-
-  git clone [https://github.com/YentYT/english-site]
 
 
-2. Установите зависимости:
-  
-  pip install -r requirements.txt
+1.  **Склонируйте репозиторий:**
 
+    
+bash
+    git clone https://github.com/YourUsername/English-Learning-Website.git  # Обязательно замени на свою ссылку!
+    cd English-Learning-Website  # И здесь тоже замени!
+    ```
 
-3. Запустите приложение:
+2.  Установите зависимости:
 
-  python app.py
+    
+    pip install -r requirements.txt
+    
 
+3.  (Для работы переводчика Google) Настройте файл config.py:
 
-4. Откройте веб-браузер и перейдите по адресу http://127.0.0.1:5000/
+    •   Создайте файл config.py в корневой директории проекта.
+    •   Добавьте в него переменные, необходимые для работы Google Translate API (если используете):
+
+4.  Запустите сайт:
+
+    
+    python app.py
+    0/
