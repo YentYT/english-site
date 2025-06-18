@@ -18,31 +18,9 @@
 •   HTML
 •   googletrans (Google Translate API)
 
-## Установка
-
-
+## Запуск
 
 1.  **Склонируйте репозиторий:**
 
     
-bash
-    git clone https://github.com/YourUsername/English-Learning-Website.git  # Обязательно замени на свою ссылку!
-    cd English-Learning-Website  # И здесь тоже замени!
-    ```
 
-2.  Установите зависимости:
-
-    
-    pip install -r requirements.txt
-    
-
-3.  (Для работы переводчика Google) Настройте файл config.py:
-
-    •   Создайте файл config.py в корневой директории проекта.
-    •   Добавьте в него переменные, необходимые для работы Google Translate API (если используете):
-
-4.  Запустите сайт:
-
-    
-    python app.py
-    0/
