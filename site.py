@@ -132,9 +132,98 @@ def high_film():
     return render_template('highfilm.html')
 
 
+@app.route('/test', methods=['GET', 'POST'])
+def test():
+    """Отображает шаблон test.html и обрабатывает результаты теста."""
+    if request.method == 'POST':
+        tail1 = request.form['tail']
+        cow1 = request.form['cow']
+        window1 = request.form['window']
+        degree1 = 'новичок'
+        degree2 = 'средний'
+        degree3 = 'продвинутый'
+
+        tail_correct = tail1.lower() == 'хвост'
+        cow_correct = cow1.lower() == 'корова'
+        window_correct = window1.lower() == 'окно'
+
+        if tail_correct and cow_correct and window_correct:
+            return render_template('result.html', level=degree3)
+        elif (tail_correct and cow_correct and not window_correct) or \
+             (tail_correct and window_correct and not cow_correct) or \
+             (cow_correct and window_correct and not tail_correct):
+            return render_template('result.html', level=degree2)
+        else:
+            return render_template('result.html', level=degree1)
+
+    return render_template('test.html')
+
+
+@app.route('/easytest', methods=['GET', 'POST'])
+def easy_test():
+    """Отображает шаблон easytest.html и обрабатывает результаты теста."""
+    if request.method == 'POST':
+        sing1 = request.form['sing']
+        heard1 = request.form['heard']
+        speak1 = request.form['speak']
+        cook1 = request.form['cooked']
+        watch1 = request.form['watched']
+        young1 = request.form['younger']
+        night1 = request.form['night']
+        said1 = request.form['said']
+        blue1 = request.form['blue']
+        listening1 = request.form['listening']
+        guilty1 = request.form['виновный']
+        remote1 = request.form['удаленный']
+        recent1 = request.form['недавний']
+        relevant1 = request.form['актуальный']
+        curious1 = request.form['любопытный']
+
+        correct_answers = ['sing', 'heard', 'speak', 'cooked', 'watched',
+                           'younger', 'night', 'said', 'blue', 'listening',
+                           'виновный', 'удаленный', 'недавний', 'актуальный',
+                           'любопытный']
+        user_answers = [sing1, heard1, speak1, cook1, watch1, young1, night1,
+                        said1, blue1, listening1, guilty1, remote1, recent1,
+                        relevant1, curious1]
+
+        count = sum(ans == corr for ans, corr in zip(user_answers,
+                                                     correct_answers))
+        percent = math.ceil((count / 15) * 100)
+
+        if percent >= 87:
+            session['level'] = (
+                f'Поздравляем, вы отлично усвоили метериал! У вас {percent}% '
+                'правильных ответов. Теперь вы можете двигаться дальше и '
+                'переходить к программе для среднего уровня.'
+            )
+        elif 70 <= percent < 87:
+            session['level'] = (
+                f'Вы неплохо справились, у вас {percent}% правильных ответов. '
+                'Нужно еще немного потренироваться, чтобы улучшить результат '
+                'и перейти к следующему уровню.'
+            )
+        else:
+            session['level'] = (
+                f'У вас {percent}% правильных ответов. Советуем вам заново '
+                'тщательно изучить программу для новичков.'
+            )
+
+        return redirect(url_for('easy_result'))
+
+    return render_template('easytest.html')
+
+
+@app.route('/easyresult')
+def easy_result():
+    """Отображает шаблон easy_result.html."""
+    level = session.get('level')
+    return render_template('easyresult.html', level=level)
+
+
 @app.route('/avtest', methods=['GET', 'POST'])
 def av_test():
-    """Отображает шаблон av_test.html."""
+    """Отображает шаблон avtest.html."""
     if request.method == 'POST':
         contribute1 = request.form['contribute']
         escape1 = request.form['escape']
