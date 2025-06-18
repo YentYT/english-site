@@ -16,8 +16,8 @@
 * Python
 * Flask
 * HTML
-* googletrans (Google Translate API)
-* (Пример) База данных SQLite
+* googletrans
+* База данных SQLite
 
 
 
