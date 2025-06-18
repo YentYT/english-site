@@ -24,12 +24,15 @@
 
   git clone [https://github.com/YentYT/english-site]
 
-3. Установите зависимости:
+
+2. Установите зависимости:
   
   pip install -r requirements.txt
+
 
 3. Запустите приложение:
 
   python app.py
+
 
 4. Откройте веб-браузер и перейдите по адресу http://127.0.0.1:5000/
